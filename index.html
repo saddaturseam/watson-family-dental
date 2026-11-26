@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#086f76">
+  <meta name="description" content="Watson Family Dental provides family and general dentistry in St. Louis, Missouri. Call (314) 645-6400 to discuss an appointment at 3707 Watson Rd.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Watson Family Dental | St. Louis, MO">
+  <meta property="og:description" content="Personalized, gentle family and general dentistry on Watson Road in St. Louis.">
+  <meta property="og:image" content="assets/office-exterior.jpg">
+  <title>Watson Family Dental | Family Dentist in St. Louis, MO</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preload" as="image" href="assets/dr-stephen-christy.jpg" fetchpriority="high">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Watson Family Dental",
+    "url": "https://watsonfamilydentalstl.com/",
+    "telephone": "+1-314-645-6400",
+    "image": "https://watsonfamilydentalstl.com/wp-content/uploads/2024/12/watson-family-exterior-2024-copy-1200x602.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3707 Watson Rd",
+      "addressLocality": "St. Louis",
+      "addressRegion": "MO",
+      "postalCode": "63109",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --teal: #08727a;
+      --teal-deep: #075860;
+      --teal-pale: #e8f4f3;
+      --ink: #1f2b35;
+      --muted: #5a6873;
+      --line: #dce4e8;
+      --paper: #fff;
+      --wash: #f4f7f8;
+      --warm: #f5efe7;
+      --gold: #bc8a48;
+      --radius: 18px;
+      --shadow: 0 16px 50px rgba(27, 51, 60, .10);
+      --content: 1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: var(--teal-deep); }
+    a:hover { color: #03444a; }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #d99f50; outline-offset: 3px; border-radius: 5px; }
+    .wrap { width: min(var(--content), calc(100% - 44px)); margin-inline: auto; }
+    .eyebrow { margin: 0 0 13px; color: var(--teal); font-size: .75rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { line-height: 1.12; letter-spacing: -.035em; }
+    h1 { max-width: 700px; margin-bottom: 20px; font-size: clamp(2.65rem, 5.3vw, 4.65rem); font-weight: 760; }
+    h2 { margin-bottom: 16px; font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 740; }
+    h3 { margin-bottom: 11px; font-size: 1.23rem; font-weight: 730; }
+    .lead { color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.7; }
+    .topbar { background: var(--teal-deep); color: white; font-size: .83rem; }
+    .topbar-inner { min-height: 37px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .topbar a { color: white; text-decoration: none; font-weight: 650; }
+    .topbar .top-location { opacity: .9; }
+    .site-header { position: sticky; z-index: 20; top: 0; background: rgba(255,255,255,.97); border-bottom: 1px solid rgba(220,228,232,.85); backdrop-filter: blur(12px); }
+    .nav-row { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; min-width: 215px; color: var(--ink); text-decoration: none; }
+    .brand img { width: 53px; height: 53px; object-fit: contain; }
+    .brand-copy { display: grid; line-height: 1.05; }
+    .brand-copy strong { font-size: 1rem; letter-spacing: -.025em; }
+    .brand-copy small { margin-top: 6px; color: var(--muted); font-size: .65rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: clamp(14px, 2.2vw, 29px); }
+    .nav-links a { color: #34424d; text-decoration: none; font-size: .9rem; font-weight: 670; white-space: nowrap; }
+    .nav-links a:hover { color: var(--teal); }
+    .button { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 21px; border: 1px solid var(--teal); border-radius: 9px; color: white; background: var(--teal); font: inherit; font-size: .94rem; font-weight: 760; text-decoration: none; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
+    .button:hover { transform: translateY(-1px); color: white; background: var(--teal-deep); box-shadow: 0 8px 22px rgba(8,114,122,.2); }
+    .button-outline { color: var(--teal-deep); background: transparent; }
+    .button-outline:hover { color: white; }
+    .mobile-menu { display: none; }
+    .hero { position: relative; overflow: hidden; padding: 68px 0 76px; color: #fff; background: radial-gradient(ellipse at 78% 42%, rgba(59,139,139,.35), transparent 43%), linear-gradient(118deg, #123d43 0%, #0c343a 60%, #092d33 100%); }
+    .hero::before { position: absolute; top: -210px; left: -135px; width: 470px; height: 470px; border: 1px solid rgba(197,231,222,.1); border-radius: 50%; box-shadow: 0 0 0 28px rgba(197,231,222,.025), 0 0 0 58px rgba(197,231,222,.02); content: ""; pointer-events: none; }
+    .hero::after { position: absolute; right: -180px; bottom: -300px; width: 680px; height: 680px; border: 1px solid rgba(197,231,222,.12); border-radius: 50%; box-shadow: 0 0 0 34px rgba(197,231,222,.025), 0 0 0 72px rgba(197,231,222,.02); content: ""; pointer-events: none; }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr .94fr; align-items: center; gap: clamp(35px, 6vw, 78px); }
+    .hero-copy { padding-block: 12px; }
+    .hero-kicker { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 24px; color: #c7e6df; font-size: .79rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; animation: heroIn .65s .04s both; }
+    .hero-kicker::before { width: 8px; height: 8px; border-radius: 50%; background: #efc47f; box-shadow: 0 0 0 5px rgba(239,196,127,.14); content: ""; }
+    .hero h1 { max-width: 650px; margin-bottom: 21px; color: white; font-size: clamp(3.15rem, 5.7vw, 5.3rem); line-height: .99; letter-spacing: -.065em; animation: heroIn .75s .12s both; }
+    .hero h1 em { color: #b5ded4; font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -.055em; }
+    .hero-copy .lead { max-width: 560px; margin-bottom: 24px; color: #c5d8d9; font-size: clamp(1.03rem, 1.45vw, 1.17rem); animation: heroIn .75s .2s both; }
+    .hero-facts { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 28px; padding: 0; list-style: none; animation: heroIn .75s .28s both; }
+    .hero-facts li { display: inline-flex; align-items: center; min-height: 34px; padding: 5px 12px; border: 1px solid rgba(212,232,229,.22); border-radius: 99px; color: #e3efed; background: rgba(255,255,255,.045); font-size: .79rem; font-weight: 640; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; animation: heroIn .75s .36s both; }
+    .hero .button { border-color: #f0c882; color: #123a40; background: #f0c882; }
+    .hero .button:hover { border-color: #f7dba8; background: #f7dba8; }
+    .hero .button-outline { border-color: rgba(227,242,239,.6); color: #f4faf9; background: transparent; }
+    .hero .button-outline:hover { border-color: #f4faf9; color: #123a40; background: #f4faf9; }
+    .hero-art { position: relative; min-height: 490px; isolation: isolate; animation: heroIn .9s .14s both; }
+    .hero-halo { position: absolute; z-index: -1; inset: 35px 6px 22px 8px; overflow: hidden; border: 1px solid rgba(211,239,232,.22); border-radius: 48% 48% 40% 40% / 42% 42% 34% 34%; background: radial-gradient(circle at 54% 34%, rgba(97,165,157,.32), rgba(28,94,99,.12) 44%, rgba(6,38,44,.25) 76%); }
+    .hero-halo::before, .hero-halo::after { position: absolute; inset: 18px; border: 1px solid rgba(211,239,232,.15); border-radius: inherit; content: ""; }
+    .hero-halo::after { inset: 38px; opacity: .65; }
+    .hero-spark { position: absolute; top: 33px; right: 23px; width: 71px; height: 71px; display: grid; place-items: center; border: 1px solid rgba(237,210,159,.7); border-radius: 50%; color: #f1d49d; background: rgba(13,58,64,.66); font-size: 2rem; animation: slowSpin 22s linear infinite; }
+    .portrait-frame { position: absolute; overflow: hidden; border: 6px solid #f5f1e9; background: #e4e4db; box-shadow: 0 25px 55px rgba(0,0,0,.24); }
+    .portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .portrait-main { top: 23px; right: 8%; width: 66%; height: 385px; border-radius: 190px 190px 20px 20px; transform: rotate(2deg); animation: portraitFloat 7s ease-in-out infinite; }
+    .portrait-main img { object-position: 50% 28%; }
+    .portrait-second { bottom: 3px; left: 0; width: 45%; height: 215px; border-radius: 17px 92px 17px 17px; transform: rotate(-4deg); animation: portraitFloat 8s 1s ease-in-out infinite reverse; }
+    .portrait-second img { object-position: 50% 23%; }
+    .portrait-label { position: absolute; right: 4%; bottom: 13px; display: flex; align-items: center; gap: 9px; padding: 10px 14px; border: 1px solid rgba(228,240,237,.23); border-radius: 99px; color: #eff8f6; background: rgba(8,48,54,.84); box-shadow: 0 12px 24px rgba(0,0,0,.15); font-size: .75rem; font-weight: 700; letter-spacing: .02em; backdrop-filter: blur(7px); }
+    .portrait-label::before { width: 8px; height: 8px; border-radius: 50%; background: #a7d5c3; box-shadow: 0 0 0 4px rgba(167,213,195,.13); content: ""; }
+    .hero-note { position: absolute; top: 132px; left: -7px; width: 184px; padding: 16px 16px 15px; border: 1px solid rgba(220,228,232,.8); border-radius: 15px; background: white; box-shadow: 0 16px 40px rgba(0,0,0,.2); animation: noteFloat 5.5s 1s ease-in-out infinite; }
+    .hero-note .eyebrow { margin-bottom: 7px; color: var(--teal); font-size: .61rem; letter-spacing: .1em; }
+    .hero-note h3 { margin-bottom: 5px; color: var(--ink); font-size: .98rem; }
+    .hero-note p { margin-bottom: 0; color: var(--muted); font-size: .79rem; line-height: 1.45; }
+    @keyframes heroIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes portraitFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -9px; } }
+    @keyframes noteFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+    @keyframes slowSpin { to { rotate: 360deg; } }
+    .proof-strip { padding: 28px 0; border-block: 1px solid var(--line); background: #fff; }
+    .proof-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .proof-item { min-height: 75px; display: flex; align-items: center; gap: 12px; padding-inline: 10px; }
+    .proof-icon { flex: 0 0 42px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; color: var(--teal); background: var(--teal-pale); font-size: 1.2rem; font-weight: 800; }
+    .proof-item strong { display: block; font-size: .91rem; }
+    .proof-item span:last-child { display: block; margin-top: 3px; color: var(--muted); font-size: .76rem; line-height: 1.35; }
+    section { padding: 86px 0; }
+    .section-head { max-width: 680px; margin-bottom: 36px; }
+    .section-head.center { margin-inline: auto; text-align: center; }
+    .section-head p:last-child { margin-bottom: 0; color: var(--muted); }
+    .services-section, .approach-section, .finance-section, .faq-section { background: var(--wash); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .service-card { min-height: 228px; display: flex; flex-direction: column; padding: 25px; border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: 0 5px 18px rgba(25,46,54,.025); transition: transform .2s ease, box-shadow .2s ease; }
+    .service-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .service-icon { width: 46px; height: 46px; display: grid; place-items: center; margin-bottom: 17px; border-radius: 14px; color: var(--teal); background: var(--teal-pale); font-size: 1.35rem; }
+    .service-card p { margin: 0 0 17px; color: var(--muted); font-size: .92rem; }
+    .text-link { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; font-size: .86rem; font-weight: 750; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .text-link::after { content: "↗"; font-size: 1rem; }
+    .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .result-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: white; box-shadow: 0 8px 24px rgba(25,46,54,.04); }
+    .result-images { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; background: #e8edee; }
+    .result-photo { position: relative; min-width: 0; aspect-ratio: 1.42; overflow: hidden; background: #edf0f0; }
+    .result-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .result-photo span { position: absolute; left: 10px; bottom: 10px; padding: 4px 9px; border-radius: 99px; color: #27343d; background: rgba(255,255,255,.94); font-size: .68rem; font-weight: 850; letter-spacing: .08em; }
+    .result-copy { padding: 21px 23px 24px; }
+    .result-copy h3 { margin-bottom: 7px; }
+    .result-copy p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+    .photo-note { margin: 18px 0 0; color: #68737a; font-size: .78rem; text-align: center; }
+    .approach-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 13px; }
+    .approach-card { min-height: 185px; padding: 20px 17px; border: 1px solid var(--line); border-radius: 15px; background: #fff; }
+    .approach-card .proof-icon { width: 38px; height: 38px; margin-bottom: 14px; font-size: 1rem; }
+    .approach-card h3 { margin-bottom: 9px; font-size: 1rem; }
+    .approach-card p { margin: 0; color: var(--muted); font-size: .82rem; line-height: 1.55; }
+    .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 36px; }
+    .step { position: relative; padding: 0 12px 0 0; }
+    .step:not(:last-child)::after { position: absolute; top: 20px; left: 50px; right: 8px; height: 1px; background: #bed0d3; content: ""; }
+    .step-num { position: relative; z-index: 1; width: 40px; height: 40px; display: grid; place-items: center; margin-bottom: 14px; border: 5px solid #e1f0ee; border-radius: 50%; color: white; background: var(--teal); font-size: .84rem; font-weight: 800; }
+    .step h3 { margin-bottom: 8px; font-size: .97rem; }
+    .step p { margin: 0; color: var(--muted); font-size: .81rem; line-height: 1.5; }
+    .finance-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .finance-card { min-height: 220px; padding: 25px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+    .finance-card p { color: var(--muted); font-size: .91rem; }
+    .finance-card .text-link { margin-top: 6px; }
+    .fee-note { margin: 20px 0 0; padding: 15px 18px; border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; color: #5c5142; background: #fbf6ee; font-size: .86rem; }
+    .local-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 52px; }
+    .local-copy p { color: var(--muted); }
+    .local-copy h3 { margin: 24px 0 8px; font-size: 1.15rem; }
+    .local-photo { overflow: hidden; border-radius: 22px; box-shadow: var(--shadow); }
+    .local-photo img { width: 100%; aspect-ratio: 1.13; object-fit: cover; }
+    .location-section { background: var(--wash); }
+    .location-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 28px; align-items: stretch; }
+    .map-frame { min-height: 360px; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #e8f0ef; }
+    .map-frame iframe { width: 100%; height: 100%; min-height: 360px; border: 0; }
+    .address-card { display: flex; flex-direction: column; justify-content: center; padding: 34px; border: 1px solid var(--line); border-radius: 18px; background: white; }
+    .address-card .eyebrow { margin-bottom: 11px; }
+    .address-card address { margin: 0 0 16px; color: var(--muted); font-style: normal; line-height: 1.75; }
+    .address-card .phone-large { margin: 2px 0 20px; font-size: 1.45rem; font-weight: 780; }
+    .address-card .phone-large a { color: var(--ink); text-decoration: none; }
+    .address-card .button { align-self: flex-start; }
+    .doctor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .doctor-card { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: 0 8px 24px rgba(25,46,54,.04); }
+    .doctor-card img, .doctor-monogram { width: 100%; height: 225px; object-fit: cover; }
+    .doctor-monogram { display: grid; place-items: center; color: white; background: radial-gradient(circle at 72% 22%, #51a39d, transparent 43%), linear-gradient(145deg, #17656d, #163b43); font-family: Georgia, serif; font-size: 4.2rem; letter-spacing: -.08em; }
+    .doctor-copy { padding: 23px 22px 25px; }
+    .doctor-copy .eyebrow { margin-bottom: 9px; font-size: .66rem; }
+    .doctor-copy h3 { font-size: 1.35rem; }
+    .doctor-copy p { color: var(--muted); font-size: .88rem; }
+    .doctor-copy .doctor-fact { margin: 14px 0 0; padding-top: 13px; border-top: 1px solid var(--line); color: #3d505b; font-size: .79rem; font-weight: 650; }
+    .faq-list { max-width: 850px; display: grid; gap: 10px; }
+    .faq-list details { border: 1px solid var(--line); border-radius: 12px; background: white; }
+    .faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 17px 19px; cursor: pointer; font-size: .97rem; font-weight: 730; list-style: none; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { color: var(--teal); content: "+"; font-size: 1.35rem; font-weight: 500; }
+    .faq-list details[open] summary::after { content: "−"; }
+    .faq-answer { max-width: 760px; padding: 0 19px 17px; color: var(--muted); font-size: .91rem; }
+    .faq-answer p:last-child { margin-bottom: 0; }
+    .cta-band { padding: 36px 0; background: var(--teal-pale); }
+    .cta-row { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .cta-row h2 { margin-bottom: 8px; font-size: clamp(1.55rem, 2.8vw, 2.25rem); }
+    .cta-row p { margin: 0; color: var(--muted); }
+    .cta-actions { display: flex; align-items: center; flex: 0 0 auto; gap: 15px; }
+    .cta-actions .plain-phone { color: var(--ink); font-weight: 760; text-decoration: none; white-space: nowrap; }
+    .site-footer { padding: 54px 0 22px; color: #dce8e9; background: #163b43; }
+    .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 34px; }
+    .footer-brand .brand { margin-bottom: 15px; color: white; }
+    .footer-brand .brand-copy small { color: #bdd0d0; }
+    .footer-brand p { max-width: 300px; color: #b5c9cb; font-size: .86rem; }
+    .footer-col h3 { margin: 4px 0 16px; color: white; font-size: .91rem; letter-spacing: 0; }
+    .footer-col a { display: block; width: fit-content; margin: 9px 0; color: #c6d8d9; font-size: .86rem; text-decoration: none; }
+    .footer-col a:hover { color: white; text-decoration: underline; text-underline-offset: 4px; }
+    .footer-address { color: #c6d8d9; font-size: .86rem; line-height: 1.7; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; margin-top: 37px; padding-top: 18px; border-top: 1px solid rgba(225,241,241,.16); color: #a9c1c3; font-size: .76rem; }
+    .footer-bottom a { color: #c6d8d9; }
+    .mobile-call { display: none; }
+    @media (max-width: 980px) {
+      .nav-row { min-height: 76px; }
+      .nav-links { gap: 14px; }
+      .nav-links a { font-size: .82rem; }
+      .header-cta { padding-inline: 15px; font-size: .85rem; }
+      .brand { min-width: 190px; }
+      .hero-grid { gap: 32px; }
+      .hero-art { min-height: 430px; }
+      .portrait-main { height: 345px; }
+      .portrait-second { height: 190px; }
+      .proof-row { grid-template-columns: repeat(2, 1fr); }
+      .approach-grid { grid-template-columns: repeat(3, 1fr); }
+      .doctor-grid { grid-template-columns: repeat(2, 1fr); }
+      .doctor-card img, .doctor-monogram { height: 210px; }
+    }
+    @media (max-width: 700px) {
+      html { scroll-padding-top: 78px; }
+      .wrap { width: min(var(--content), calc(100% - 32px)); }
+      .topbar-inner { min-height: 34px; justify-content: center; text-align: center; font-size: .75rem; }
+      .topbar .top-location { display: none; }
+      .nav-row { min-height: 72px; gap: 10px; }
+      .brand { min-width: 0; gap: 8px; }
+      .brand img { width: 46px; height: 46px; }
+      .brand-copy strong { font-size: .88rem; }
+      .brand-copy small { font-size: .57rem; }
+      .nav-desktop { display: none; }
+      .header-cta { min-height: 42px; margin-left: auto; padding-inline: 13px; font-size: .81rem; }
+      .mobile-menu { position: relative; display: block; }
+      .mobile-menu summary { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); cursor: pointer; list-style: none; }
+      .mobile-menu summary::-webkit-details-marker { display: none; }
+      .mobile-menu summary span, .mobile-menu summary span::before, .mobile-menu summary span::after { width: 17px; height: 2px; display: block; border-radius: 2px; background: currentColor; content: ""; }
+      .mobile-menu summary span { position: relative; }
+      .mobile-menu summary span::before { position: absolute; top: -6px; }
+      .mobile-menu summary span::after { position: absolute; top: 6px; }
+      .mobile-menu[open] .mobile-panel { position: absolute; top: 52px; right: 0; width: min(310px, calc(100vw - 32px)); display: grid; gap: 0; padding: 10px; border: 1px solid var(--line); border-radius: 14px; background: white; box-shadow: var(--shadow); }
+      .mobile-panel a { padding: 12px 13px; border-radius: 8px; color: var(--ink); font-size: .9rem; font-weight: 670; text-decoration: none; }
+      .mobile-panel a:hover { background: var(--wash); }
+      .hero { padding: 42px 0 52px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 29px; }
+      .hero-copy { padding: 0; }
+      h1 { max-width: 590px; font-size: clamp(2.45rem, 11vw, 3.6rem); }
+      .hero-copy .lead { font-size: 1.02rem; }
+      .hero-art { min-height: 390px; max-width: 540px; width: 100%; margin-inline: auto; }
+      .hero-halo { inset: 20px 9px 20px; }
+      .hero-spark { top: 17px; right: 15px; width: 58px; height: 58px; }
+      .portrait-main { top: 18px; right: 7%; width: 69%; height: 310px; }
+      .portrait-second { width: 45%; height: 173px; }
+      .hero-note { top: 102px; left: -2px; width: 158px; padding: 13px; }
+      .hero-note h3 { font-size: .88rem; }
+      .hero-note p { font-size: .72rem; }
+      .portrait-label { right: 2%; bottom: 8px; padding: 8px 11px; font-size: .68rem; }
+      .proof-strip { padding: 18px 0; }
+      .proof-row { gap: 8px; }
+      .proof-item { min-height: 70px; gap: 9px; padding: 4px; }
+      .proof-icon { flex-basis: 36px; width: 36px; height: 36px; border-radius: 11px; font-size: 1rem; }
+      .proof-item strong { font-size: .78rem; }
+      .proof-item span:last-child { font-size: .68rem; }
+      section { padding: 62px 0; }
+      .section-head { margin-bottom: 26px; }
+      .services-grid, .results-grid, .finance-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 0; padding: 21px; }
+      .service-icon { width: 41px; height: 41px; margin-bottom: 13px; }
+      .result-images { gap: 3px; }
+      .result-photo { aspect-ratio: 1.22; }
+      .result-copy { padding: 18px; }
+      .approach-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .approach-card { min-height: 0; padding: 16px 14px; }
+      .approach-card h3 { font-size: .92rem; }
+      .approach-card p { font-size: .77rem; }
+      .steps { grid-template-columns: 1fr; gap: 18px; margin-top: 29px; }
+      .step { display: grid; grid-template-columns: 42px 1fr; column-gap: 13px; padding: 0; }
+      .step:not(:last-child)::after { top: 43px; bottom: -15px; left: 19px; width: 1px; height: auto; }
+      .step-num { grid-row: span 2; margin: 0; }
+      .step h3 { margin: 1px 0 4px; }
+      .step p { grid-column: 2; }
+      .finance-card { min-height: 0; padding: 21px; }
+      .local-grid, .location-grid { grid-template-columns: 1fr; gap: 24px; }
+      .local-photo { order: -1; }
+      .local-photo img { aspect-ratio: 1.55; }
+      .map-frame, .map-frame iframe { min-height: 300px; }
+      .address-card { padding: 25px; }
+      .doctor-grid { grid-template-columns: 1fr; }
+      .doctor-card img, .doctor-monogram { height: 250px; }
+      .doctor-copy { padding: 20px 17px; }
+      .doctor-copy h3 { font-size: 1.14rem; }
+      .doctor-copy p { font-size: .82rem; }
+      .faq-list summary { padding: 15px; font-size: .9rem; }
+      .faq-answer { padding: 0 15px 15px; font-size: .85rem; }
+      .cta-row { align-items: flex-start; flex-direction: column; gap: 18px; }
+      .cta-actions { flex-wrap: wrap; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 26px 18px; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; gap: 8px; margin-top: 27px; }
+      .mobile-call { position: fixed; z-index: 15; right: 12px; bottom: 12px; left: 12px; display: flex; min-height: 52px; border-radius: 11px; box-shadow: 0 8px 25px rgba(5,72,78,.28); }
+      body { padding-bottom: 70px; }
+    }
+    @media (max-width: 390px) {
+      .brand-copy strong { font-size: .8rem; }
+      .header-cta { padding-inline: 10px; font-size: .75rem; }
+      .hero-actions .button { flex: 1 1 auto; padding-inline: 14px; }
+      .hero-art { min-height: 350px; }
+      .portrait-main { height: 278px; }
+      .portrait-second { height: 150px; }
+      .hero-note { top: 90px; left: 0; width: 145px; }
+      .doctor-card img, .doctor-monogram { height: 230px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="top-location">Family and general dentistry · St. Louis, Missouri</span>
+      <span>Dental concern? <a href="tel:+13146456400">Call (314) 645-6400</a></span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="brand" href="#home" aria-label="Watson Family Dental home">
+        <img src="assets/logo.png" width="53" height="53" alt="">
+        <span class="brand-copy"><strong>Watson Family Dental</strong><small>St. Louis, Missouri</small></span>
+      </a>
+      <nav class="nav-links nav-desktop" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#approach">Our approach</a>
+        <a href="#dentists">Dentists</a>
+        <a href="#smiles">Smile gallery</a>
+        <a href="#location">Location</a>
+      </nav>
+      <a class="button header-cta" href="tel:+13146456400">Call to schedule</a>
+      <details class="mobile-menu">
+        <summary aria-label="Open navigation menu"><span></span></summary>
+        <nav class="mobile-panel" aria-label="Mobile navigation">
+          <a href="#services">Services</a><a href="#approach">Our approach</a><a href="#dentists">Meet the dentists</a><a href="#smiles">Smile gallery</a><a href="#financing">Financing</a><a href="#faq">Questions</a><a href="#location">Location and directions</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">St. Louis · Family and general dentistry</p>
+          <h1 id="hero-title">Care that starts with a conversation.<br><em>And keeps you smiling.</em></h1>
+          <p class="lead">Thoughtful, gentle dental care rooted in prevention, personal attention, and options explained in a way that makes sense to you.</p>
+          <ul class="hero-facts" aria-label="Practice details">
+            <li>Prevention-first care</li><li>On Watson Road</li><li>Call to arrange your visit</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button" href="tel:+13146456400">Call to schedule <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#approach">Get to know our approach</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-halo" aria-hidden="true"></div>
+          <div class="hero-spark" aria-hidden="true">✳</div>
+          <div class="portrait-frame portrait-main"><img src="assets/dr-stephen-christy.jpg" width="600" height="450" alt="Dr. Stephen Christy, dentist at Watson Family Dental" fetchpriority="high"></div>
+          <div class="portrait-frame portrait-second"><img src="assets/dr-jason-allen.jpg" width="600" height="450" alt="Dr. Jason Allen, dentist at Watson Family Dental" loading="eager"></div>
+          <aside class="hero-note" aria-label="Care philosophy">
+            <p class="eyebrow">A little more personal</p>
+            <h3>Good care begins with listening.</h3>
+            <p>Learn about the people behind your care.</p>
+          </aside>
+          <div class="portrait-label" aria-label="Dr. Stephen Christy and Dr. Jason Allen">MEET YOUR DENTISTS</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="proof-strip" aria-label="Practice values">
+      <div class="wrap proof-row">
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">✳</span><span><strong>Prevention first</strong><span>Care and education for dental health</span></span></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">♡</span><span><strong>Personal attention</strong><span>Thoughtful, gentle care for each patient</span></span></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">◎</span><span><strong>Thorough exams</strong><span>Teeth, gums, and overall health in view</span></span></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">✓</span><span><strong>Modern learning</strong><span>Continuing education and current techniques</span></span></div>
+      </div>
+    </div>
+
+    <section class="services-section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Care for your smile</p>
+          <h2 id="services-title">Dental services in St. Louis</h2>
+          <p>From routine preventive visits to restorative and cosmetic care, the team will discuss your needs and the options that fit your oral health.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><span class="service-icon" aria-hidden="true">✳</span><h3>Exams and cleanings</h3><p>Regular exams and professional cleanings help identify concerns early and support healthy teeth and gums.</p><a class="text-link" href="https://watsonfamilydentalstl.com/procedures/cleanings-prevention/">Learn about preventive care</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true">⌁</span><h3>Cosmetic dentistry</h3><p>Options include tooth-colored fillings, porcelain crowns and veneers, fixed bridges, and tooth whitening.</p><a class="text-link" href="https://watsonfamilydentalstl.com/procedures/cosmetic-dentistry/">Explore cosmetic dentistry</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true">◉</span><h3>Restorative dentistry</h3><p>Discuss care for damaged or missing teeth, including crowns, bridges, dentures, and root canal therapy.</p><a class="text-link" href="https://watsonfamilydentalstl.com/procedures/restorations/">Explore restorative care</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true">≈</span><h3>Gum health</h3><p>Exams include an evaluation of gum health. Treatment depends on the type and extent of periodontal disease.</p><a class="text-link" href="https://watsonfamilydentalstl.com/procedures/periodontal-disease/">Learn about periodontal care</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true">⌕</span><h3>Clear aligner therapy</h3><p>The dentists have continuing education in clear aligner therapy. Ask whether it may suit your smile goals.</p><a class="text-link" href="https://watsonfamilydentalstl.com/procedures/orthodontics/">Explore orthodontics</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true">＋</span><h3>Dental emergencies</h3><p>If an emergency occurs, the practice makes every effort to see and care for you as soon as possible.</p><a class="text-link" href="tel:+13146456400">Call the office</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="smiles" aria-labelledby="smiles-title">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Smile gallery</p>
+          <h2 id="smiles-title">Examples of restorative care</h2>
+          <p>These patient photos are shared with consent from the practice’s existing Smile Gallery.</p>
+        </div>
+        <div class="results-grid">
+          <article class="result-card">
+            <div class="result-images">
+              <div class="result-photo"><img src="assets/smile-before-crown.jpg" width="800" height="600" alt="Before treatment: a front tooth with an older restoration" loading="lazy"><span>BEFORE</span></div>
+              <div class="result-photo"><img src="assets/smile-after-crown.jpg" width="800" height="600" alt="After treatment: the tooth restored with an all-porcelain crown" loading="lazy"><span>AFTER</span></div>
+            </div>
+            <div class="result-copy"><h3>All-porcelain crown</h3><p>An older front-tooth restoration was replaced with a crown shaped to match the surrounding gumline and teeth.</p></div>
+          </article>
+          <article class="result-card">
+            <div class="result-images">
+              <div class="result-photo"><img src="assets/smile-before-implant.jpg" width="800" height="600" alt="Before treatment: a missing upper front tooth" loading="lazy"><span>BEFORE</span></div>
+              <div class="result-photo"><img src="assets/smile-after-implant.jpg" width="800" height="600" alt="After treatment: a single implant with an all-porcelain crown" loading="lazy"><span>AFTER</span></div>
+            </div>
+            <div class="result-copy"><h3>Single-tooth replacement</h3><p>This gallery case shows a single implant with an all-porcelain crown to restore the smile and function.</p></div>
+          </article>
+        </div>
+        <p class="photo-note">Patients depicted in these photos provided consent to display them online. Results vary. Implant-related care options should be confirmed with the office.</p>
+      </div>
+    </section>
+
+    <section class="approach-section" id="approach" aria-labelledby="approach-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">What guides our care</p>
+          <h2 id="approach-title">A calm, prevention-focused approach</h2>
+          <p>The practice’s philosophy is centered on preserving natural teeth, explaining options, and treating each patient as an individual.</p>
+        </div>
+        <div class="approach-grid">
+          <article class="approach-card"><span class="proof-icon" aria-hidden="true">✳</span><h3>Prevent early</h3><p>Regular checkups can help address small concerns before they grow.</p></article>
+          <article class="approach-card"><span class="proof-icon" aria-hidden="true">♡</span><h3>Listen and explain</h3><p>Dr. Christy takes time to listen and help patients understand their care.</p></article>
+          <article class="approach-card"><span class="proof-icon" aria-hidden="true">⌁</span><h3>Gentle attention</h3><p>The team understands that dental visits can feel uneasy for some patients.</p></article>
+          <article class="approach-card"><span class="proof-icon" aria-hidden="true">◎</span><h3>Safety standards</h3><p>Sterilization and infection-control processes follow ADA, OSHA, and CDC recommendations.</p></article>
+          <article class="approach-card"><span class="proof-icon" aria-hidden="true">✚</span><h3>Individual needs</h3><p>Dr. Christy has experience caring for patients with dementia and special circumstances.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Getting started</p>
+          <h2 id="steps-title">A clear path to your next visit</h2>
+          <p>Call the office to talk through scheduling and what to expect for your care.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-num">1</span><h3>Call the office</h3><p>Speak with the team about scheduling. Please call for appointments.</p></article>
+          <article class="step"><span class="step-num">2</span><h3>Share your concerns</h3><p>Let the dentist know about your oral health and medical history.</p></article>
+          <article class="step"><span class="step-num">3</span><h3>Have an exam</h3><p>Exams review teeth and gums; x-rays are taken when necessary.</p></article>
+          <article class="step"><span class="step-num">4</span><h3>Discuss your options</h3><p>The team uses comprehensive treatment planning for your dental health.</p></article>
+          <article class="step"><span class="step-num">5</span><h3>Keep up with prevention</h3><p>Regular checkups and home-care guidance support ongoing dental health.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="finance-section" id="financing" aria-labelledby="finance-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Payment information</p>
+          <h2 id="finance-title">Membership and financing options</h2>
+          <p>Call the practice with questions about membership plans, financing, or your specific payment options.</p>
+        </div>
+        <div class="finance-grid">
+          <article class="finance-card"><h3>Membership plans</h3><p>Subscription-based dental care plans include regular exams, cleanings, and x-rays, with discounts on other dental services. Memberships are for patients who do not use dental insurance through the office.</p><a class="text-link" href="https://watsonfamilydentalstl.com/financing/">View financing information</a></article>
+          <article class="finance-card"><h3>Flexible financing</h3><p>The practice lists Klarna, Affirm, and CareCredit financing options. Approval, terms, and options depend on the provider and purchase.</p><a class="text-link" href="https://watsonfamilydentalstl.com/financing/">Explore financing details</a></article>
+          <article class="finance-card"><h3>Pay online</h3><p>Online payments are available through QuantaPay. Cash and personal checks are also accepted.</p><a class="text-link" href="https://app.quantapay.cc/Watson-Famiy-Dental/otp-request" rel="noopener">Pay through QuantaPay</a></article>
+        </div>
+        <p class="fee-note">The practice’s financing page states that a 3.4% processing fee applies to credit and debit card transactions beginning July 1, 2026. Cash and personal checks are accepted to avoid this fee.</p>
+        <p style="margin:15px 0 0;color:var(--muted);font-size:.87rem">Accepted insurance plans and in-network status are not listed on the current website. Please call to ask about your plan.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="local-title">
+      <div class="wrap local-grid">
+        <div class="local-copy">
+          <p class="eyebrow">Watson Family Dental</p>
+          <h2 id="local-title">Your family dentist on Watson Road</h2>
+          <p>Watson Family Dental is a family and general dentistry practice at 3707 Watson Rd in St. Louis. The office grew from the 2021 merger of two practices led by friends and colleagues Dr. Stephen Christy and Dr. Jason Allen.</p>
+          <h3>Care shaped by prevention</h3>
+          <p>The practice emphasizes preventive care and patient education. Thorough exams look at overall tooth and gum health, include oral cancer exams, and use x-rays when needed. Treatment planning considers restorative and cosmetic options for your dental health.</p>
+          <h3>Care when concerns arise</h3>
+          <p>If a dental emergency occurs, the practice makes every effort to see and care for you as soon as possible. Call the office to discuss your situation.</p>
+          <a class="text-link" href="https://watsonfamilydentalstl.com/our-practice/">Learn more about the practice</a>
+        </div>
+        <figure class="local-photo"><img src="assets/office-exterior.jpg" width="1200" height="602" alt="The Watson Family Dental building on Watson Road" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="location-section" id="location" aria-labelledby="location-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Visit our office</p>
+          <h2 id="location-title">Find Watson Family Dental in St. Louis</h2>
+          <p>One office, located on Watson Road in ZIP code 63109.</p>
+        </div>
+        <div class="location-grid">
+          <div class="map-frame"><iframe title="Map to Watson Family Dental, 3707 Watson Rd, St. Louis" src="https://www.google.com/maps?q=3707%20Watson%20Rd%2C%20St.%20Louis%2C%20MO%2063109&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+          <div class="address-card">
+            <p class="eyebrow">Main office</p>
+            <h3>Watson Family Dental</h3>
+            <address>3707 Watson Rd<br>St. Louis, MO 63109</address>
+            <p class="phone-large"><a href="tel:+13146456400">(314) 645-6400</a></p>
+            <a class="button" href="https://www.google.com/maps/dir/?api=1&destination=Watson%20Family%20Dental%2C%203707%20Watson%20Rd%2C%20St.%20Louis%2C%20MO%2063109" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dentists" aria-labelledby="dentists-title">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Meet the dentists</p>
+          <h2 id="dentists-title">Experienced care, with time to listen</h2>
+          <p>Get to know the dentists at Watson Family Dental.</p>
+        </div>
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <img src="assets/dr-stephen-christy.jpg" width="600" height="450" alt="Dr. Stephen Christy" loading="lazy">
+            <div class="doctor-copy"><p class="eyebrow">Dentist · DMD</p><h3>Dr. Stephen Christy</h3><p>Originally from Alton, Illinois, Dr. Christy earned his DMD from Southern Illinois University Dental School in 2005. He continues education in cosmetic dentistry and clear aligner therapy, and is a member of the American Dental Association.</p><p>He takes time to listen and find options that serve each patient’s best interest.</p><p class="doctor-fact">Featured conference presenter · Enjoys running in Forest Park</p></div>
+          </article>
+          <article class="doctor-card">
+            <img src="assets/dr-jason-allen.jpg" width="600" height="450" alt="Dr. Jason Allen" loading="lazy">
+            <div class="doctor-copy"><p class="eyebrow">Dentist · DMD</p><h3>Dr. Jason Allen</h3><p>Dr. Allen graduated from Southern Illinois University School of Dental Medicine in 2000 and has additional training in cosmetic dentistry and clear aligner therapy. He continues to study new procedures, materials, and technology.</p><p>His calm manner and gentle touch help patients feel comfortable in his care.</p><p class="doctor-fact">Uses an operating microscope during most restorative procedures</p></div>
+          </article>
+          <article class="doctor-card">
+            <div class="doctor-monogram" role="img" aria-label="Monogram for Dr. Michael Barry">MB</div>
+            <div class="doctor-copy"><p class="eyebrow">Dentist</p><h3>Dr. Michael Barry</h3><p>A St. Louis native, Dr. Barry graduated from A.T. Still University’s Missouri School of Dentistry &amp; Oral Health. He is a member of the American Dental Association and the Missouri Dental Association.</p><p>His family has trusted this office with their oral health for many years.</p><p class="doctor-fact">St. Louis roots · ADA and Missouri Dental Association member</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Helpful information</p>
+          <h2 id="faq-title">Questions from St. Louis patients</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>How do I make an appointment?</summary><div class="faq-answer"><p>Please call the office at <a href="tel:+13146456400">(314) 645-6400</a> to schedule. The current website says not to use its contact form to request an appointment.</p></div></details>
+          <details><summary>What should I do if I have a dental emergency?</summary><div class="faq-answer"><p>Call the office and explain what happened. The practice says it makes every effort to see and care for patients with a dental emergency as soon as possible; timing depends on the situation and schedule.</p></div></details>
+          <details><summary>Which dental insurance plans do you accept?</summary><div class="faq-answer"><p>The current website does not list accepted insurance plans or in-network status. Call the office to ask about your specific plan.</p></div></details>
+          <details><summary>Do you offer payment plans or financing?</summary><div class="faq-answer"><p>The practice lists membership plans and financing through Klarna, Affirm, and CareCredit. Options and approval depend on the provider and purchase. Call for current terms.</p></div></details>
+          <details><summary>Where is the office located?</summary><div class="faq-answer"><p>Watson Family Dental is at 3707 Watson Rd, St. Louis, MO 63109. <a href="https://www.google.com/maps/dir/?api=1&destination=Watson%20Family%20Dental%2C%203707%20Watson%20Rd%2C%20St.%20Louis%2C%20MO%2063109" target="_blank" rel="noopener">Open directions in Google Maps</a>.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Call Watson Family Dental">
+      <div class="wrap cta-row">
+        <div><h2>Have a question about your dental care?</h2><p>Call the team at Watson Family Dental in St. Louis.</p></div>
+        <div class="cta-actions"><a class="button" href="tel:+13146456400">Call (314) 645-6400</a><a class="plain-phone" href="#location">Get directions</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home"><img src="assets/logo.png" width="53" height="53" alt=""><span class="brand-copy"><strong>Watson Family Dental</strong><small>St. Louis, Missouri</small></span></a>
+          <p>Family and general dentistry with a focus on personalized care and prevention.</p>
+        </div>
+        <div class="footer-col"><h3>Practice</h3><a href="#approach">Our approach</a><a href="#dentists">Meet the dentists</a><a href="#smiles">Smile gallery</a><a href="https://watsonfamilydentalstl.com/our-practice/">Our practice</a></div>
+        <div class="footer-col"><h3>Patient resources</h3><a href="#services">Dental services</a><a href="#financing">Financing</a><a href="#faq">Common questions</a><a href="https://watsonfamilydentalstl.com/privacy-policy/">Privacy policy</a><a href="https://app.quantapay.cc/Watson-Famiy-Dental/otp-request" rel="noopener">Pay online</a></div>
+        <div class="footer-col"><h3>Contact and location</h3><div class="footer-address">3707 Watson Rd<br>St. Louis, MO 63109</div><a href="tel:+13146456400">(314) 645-6400</a><a href="#location">Get directions</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Watson Family Dental</span><span>St. Louis, Missouri · 3707 Watson Rd · <a href="tel:+13146456400">(314) 645-6400</a></span></div>
+    </div>
+  </footer>
+  <a class="button mobile-call" href="tel:+13146456400" aria-label="Call Watson Family Dental at 314 645 6400">Call (314) 645-6400</a>
+  <script>
+    // Keep the mobile navigation compact after a visitor chooses a section.
+    document.querySelectorAll('.mobile-panel a').forEach((link) => {
+      link.addEventListener('click', () => link.closest('.mobile-menu').removeAttribute('open'));
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
